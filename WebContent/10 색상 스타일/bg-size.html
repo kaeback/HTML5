@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>배경 이미지</title>
+  
+	<!--
+		background-size : 배경 이미지 크기 조절
+		
+		background-size: auto | contain | cover | <크기 값> | <백분율>
+				
+		속성값
+		auto : 배경 이미지 크기만큼 표시
+		contain : 요소 안에 배경 이미지가 다 들어오도록 확대/축소
+		cover : 배경 이미지로 요소를 모두 덮도록 이미지를 확대/축소
+		<크기값> : 너비 값과 높이 값을 지정한다. 너비값만 지정할 경우 이미지 비율로 높이값 자동 계산
+		<백분율> : 크기를 백분율로 지정
+	-->
+
+  <style>
+    div{
+      width:500px;
+      height:500px;
+      border:2px double black;
+			margin-bottom:20px;
+    }
+    /* 원래 배경 이미지 크기 그대료 표시 */
+    .bg1{
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:auto;
+    }
+    /* 지정된 크기로 표시 */
+    .bg2 {
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:200px 150px;
+    }
+    /* 가로 60% 세로 40% 만큼 배경이미지로 채우기 */
+    .bg3 {
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:60% 40%;
+    }
+    /* 요소 안에 배경이미지가 표시되도록 확대/축소 */
+    .bg4 {
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:contain;
+    }
+    /* 요소 전체를 모두 덮도록 배경 이미지를 확대/축소 */
+     .bg5 {
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:cover;
+    }
+    /* 요소의 너비와 높이에 맞게 이미지를 확대/축소 */
+    .bg6{
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:100% 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg1"></div>
+	<div class="bg2"></div>
+	<div class="bg3"></div>
+	<div class="bg4"></div>
+	<div class="bg5"></div>
+	<div class="bg6"></div>
+ </body>
+</html>

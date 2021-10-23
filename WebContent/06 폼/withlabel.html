@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>label 태그 사용</title>
+		<style>
+			ul {
+				list-style:none;
+			}
+			li {
+				margin:20px;
+			}
+		</style>
+</head>
+<body>
+	<!--
+  	<label> : 폼 요소에 레이블을 붙인다.
+  	<label [속성="속성값"]> 레이블 <input ...></label>
+  	또는
+  	<label for="id 이름>레이블</label>
+  	<input id="id 이름 [속성="속성값"]>
+  	레이블 태그와 <input> 소스가 떨어져도 연결 할 수 있다는 장정이 있다.
+  	-->
+	<form>
+		<h3>수강 분야(다수 선택 가능)</h3>
+		<!-- 레이블을 사용하지 않았기 때문에 텍스트만 클릭하면 체크박스 버튼이 선택되지 않는다. -->
+		<ul>
+			<li><input type="checkbox" value="grm">문법	</li>
+			<li><input type="checkbox" value="wr">작문</li>
+			<li><input type="checkbox" value="rd">독해</li>
+		</ul>
+		<h3>수강 과목(1과목만 선택 가능)</h3>
+		<!-- 레이블 태그를 사용했기 때문에 텍스트를 클릭해도 선택된다. -->
+		<ul>
+			<li>
+				<label><input type="radio" name="subject" value="eng">영어회화</label>
+			</li>
+			<li>
+				<label><input type="radio" name="subject" value="ch">중국어회화</label>
+			</li>
+			<li>				
+				<label><input type="radio" name="subject" value="jp">일어회화</label>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

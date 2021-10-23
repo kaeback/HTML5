@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--
+		<input type="유형" [속성="속성값"]>
+		유형
+		hidden : 사용자에게 보이지는 않지만 서버로 넘겨지는 값
+		text : 한 줄짜리 텍스트를 입력할 수 있는 텍스트 상자
+		search : 검색 상자
+		tel : 전화번호 입력 필드
+		uil : URL 주소를 넣을 수 있는 필드
+		email : 메일 주소를 입력할 수 있는 필드
+		password : 비밀번호를 입력할 수 있는 필드
+		datetime : 국제 표준시(UTC)로 설정된 날짜와 시간(연, 월, 일, 시, 분, 초, 분할 초)을 넣는다.
+		datetime-local : 사용자가 있는 지역을 기준으로 날짜와 시간을 넣는다.
+		date : 사용자 지역을 기준으로 날짜(연, 월, 일)을 넣는다.
+		month : 사용자 지역을 기준으로 날짜(연, 월)을 넣는다.
+		week : 사용자 지역을 기준으로 날짜(연, 주)를 넣는다.
+		time : 사용자 지역을 기준으로 시간(시, 분, 초, 분할 초)을 넣는다.
+		number : 숫자를 조정할 수 있는 화살표를 넣는다.
+		range : 숫자를 조정할 수 있는 슬라이드 막대를 넣는다.
+		color : 색상 표를 넣는다.
+		checkbox : 체크박스를 넣는다.
+		radio : 라이더 버튼을 넣는다.
+		file : 파일을 첨부할 수 있는 버튼을 넣는다.
+		submit : 서버 전송 버튼을 넣는다.
+		image : submit 버튼 대신 사용할 이미지를 넣는다.
+		reset : 리셋 버튼을 넣는다.
+		button : 버튼을 넣는다.
+	-->
+	<label>hidden<input type="hidden"></label><br>
+	<label>text<input type="text"></label><br>
+	<!-- search 검색어를 입력했을 때 x표시로 검색어를 삭제할 수 있다. -->
+	<label>search<input type="search"></label><br>
+	<!-- tel 바로 전화를 걸 수 있다. -->
+	<label>tel<input type="tel"></label><br>
+	<label>url<input type="url"></label><br>
+	<label>email<input type="email"></label><br>
+	<label>password<input type="password"></label><br>
+	<label>datetime<input type="datetime"></label><br>
+	<label>datetime-local<input type="datetime-local"></label><br>
+	<label>date<input type="date"></label><br>
+	<label>month<input type="month"></label><br>
+	<label>week<input type="week"></label><br>
+	<label>time<input type="time"></label><br>
+	<label>number<input type="number"></label><br>
+	<!--  
+		range의 속성
+		min : 최소값 지정 기본은 0
+		max : 최대값 지정 기본은 100
+		step : 숫자 간격 지정 기본은 1
+		value : 필드에 표시할 초기값
+	-->
+	<label>range<input type="range"></label><br>
+	<label>color<input type="color"></label><br>
+	
+	<!-- 
+		라디오, 체크박스 속성
+		name : 구분하는 이름
+		value : 서버로 넘길 값 지정, 영문이나 숫자만 가능
+		checked : 기본 선택 지정
+	-->
+	<label>checkbox<input type="checkbox"></label><br>
+	<label>radio<input type="radio"></label><br>
+	<label>file<input type="file"></label><br>
+	<label>submit<input type="submit"></label><br>
+	<label>image<input type="image"></label><br>
+	<label>reset<input type="reset"></label><br>
+	<label>button<input type="button"></label><br>
+</body>
+</html>

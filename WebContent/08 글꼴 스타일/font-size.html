@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>폰트 크기</title>
+    
+    <!--
+    	font-size : 글자 크기 조절하기
+    	font-size: <절대 크기> | <상대 크기> | <크기> | <백분율>
+    	
+    	font-size 속성값
+    	<절대 크기> : 브라우저에서 지정한 글자 크기 xx-small | x-small | small | medium | large | x-large | xx-large
+    	<상대 크기> : 부모 요소의 글자 크기(font-size)를 기준으로 더 크게 표시하거나 더 작게 표시한다. larger | smaller
+    	<크기> : 브라우저와 상관 없이 글자 크기를 직접 지정
+    	<백분율> : 부모 요소의 글자 크기를 기준으로 해당하는 %를 계산해서 표시
+    	
+    	font-size에서 사용할수 있는 크기 지정 방법
+    	em : 해당 글꼴의 대문자 M의 너비를 기준으로 크기를 조절 (모바일을 고려한다면 em사용 권장), 16px가 1em
+    	ex : x-heigh, 해당 글꼴의 소문자 x의 높이를 기준으로 쿠기 조절
+    	px : 픽셀, 모니터 크기에 따라 상대적 크기 (주로 사용하는 단위) 크기를 지정하지 않으면 기본 16px 
+    	pt : 포인트, 일반 문서에서 사용하는 단위
+    -->
+    
+    <style>
+      h1{
+        font-size:3em; /* 글자 크기 */
+      }
+      p {
+        font-size:1em; /* 글자 크기 */
+      }
+    </style>
+</head>
+<body>
+  <h1>3em의 크기를 가진 제목</h1>
+  <p>1em의 크기를 가진 단락</p>
+</body>
+</html>
