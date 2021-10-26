@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>visibility 속성</title>
+		
+		<!--
+			visibility : 요소를 보이게 하거나 보이지 않게 하기
+			
+			visible : 화면에 요소를 표시한다.
+			hidden : 화면에서 요소를 감춘다. 하지만 크기는 그대로 유지하기 때문에 배치에 영향을 미친다.
+			collspse : 표의 행, 열, 행그룹, 열 그룹 등에서 지정하면 서로 겹치도록 조절한다.
+		-->
+		
+		<style>
+			img {
+				margin:10px;
+				padding:5px;
+				border:1px solid black;
+			}
+			.invisible {
+				visibility:hidden;
+			}
+		</style>
+	</head>
+	<body>
+			<img src="images/pic1.jpg">
+			<img src="images/pic2.jpg" class="invisible">
+			<img src="images/pic3.jpg">
+	</body>
+</html>
